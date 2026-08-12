@@ -70,8 +70,8 @@ to use, you should use:
 export CUDA_VISIBLE_DEVICES=$GPU_NUMBER
 ```
 
-Where `$NUM` is the number associated with the GPU you want to use. To get an
-overview you can use either `nvida-smi` or `btop`.
+Where `$GPU_NUMBER` is the number associated with the GPU you want to use. To get an
+overview of the GPUs you can use either `nvida-smi` or `btop`.
 
 ## On Package management
 
@@ -82,7 +82,6 @@ they are written by different people at different times. `uv` will be able to
 deal with all this, while being faster and more ergonomic. If you have not used
 `uv`, this might be a good time to try it.
 
-Computation: runs plenty fast on CPU
 
 
 # Case Study 2 
@@ -112,7 +111,7 @@ uv pip install -e .
 ```
 
 will not work. As the standard python version will be python 3.9, but balrog
-(the textworld dependency specifically) requires 3.10
+(the textworld dependency specifically) requires at least version 3.10.
 
 If you end up using a cloud provider you might need to make some changes to
 `balrog/client.py`. If the provider is compatible with either openAI, Anthropic
