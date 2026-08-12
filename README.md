@@ -36,7 +36,7 @@ If you are not comfortable using `ssh` this is likely the easiest way to get
 yourself setup with a reasonably performant computer. Note that these computers
 also allow you to use `ssh`, so you can continue/monitor your work remotely.
 
-There are also GPU nodes available on the REL cluster, 3 of theres are available
+There are also GPU nodes available on the REL cluster, 3 of these are available
 to students, for a total of 10 GPUs. These you can only access through `ssh`.
 If you decide to use them please make sure to read the storage rules, as you
 will easily go over the storage limit if you accidentally work a non-local
