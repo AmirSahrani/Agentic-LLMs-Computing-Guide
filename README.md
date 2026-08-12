@@ -146,7 +146,4 @@ No special remarks
 
 [^1]: Nvdia is better supported, but AMD should be fine. As far as I know Intel
     GPUs (Arc) are not supported by `pytorch`, the same goes for 'NPUs' your
-    computer might come with. # Case study 1 ## PBE Runs on laptop, ram not an
-    issue ## Pre train Cannot do on personal laptop gpu (out date), on cpu (i5
-    85) could manage: ``` "sequence_len": 1024, "vocab_size": 32768, "n_layer":
-    2, "n_head": 2, "n_kv_head": 2, "n_embd": 256, "window_pattern": "SSSL"
+    computer might come with. 
