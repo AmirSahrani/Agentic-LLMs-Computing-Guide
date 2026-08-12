@@ -121,11 +121,11 @@ provide your API-key. For example, when using `openrouter`, you can add to the
 `openai` wrapper as follows:
 
 ```python
-if self.client_name.lower() == "vllm": self.client =
-    OpenAI(api_key="EMPTY", base_url=self.base_url) 
+if self.client_name.lower() == "vllm": 
+    self.client = OpenAI(api_key="EMPTY", base_url=self.base_url) 
 # Add a new case for openrouter
-elif self.client_name.lower() == "openrouter": self.client =
-    OpenAI(api_key=os.environ["OPENROUTER_API_KEY"], base_url=self.base_url)
+elif self.client_name.lower() == "openrouter": 
+    self.client = OpenAI(api_key=os.environ["OPENROUTER_API_KEY"], base_url=self.base_url)
 ```
 
 We cannot provide a complete overview for all providers, it is therefore your
