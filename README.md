@@ -52,8 +52,8 @@ bill (e.g. trying to use Claude Opus or ChatGPT Sol will easily cost your 50-200
 Finally, though slow and painful, a good CPU can get you through most of the
 course. Case study 1 will take about 45 hours of compute time on a CPU, at
 least as tested on and AMD Ryzen 9 3950X 16-Core Processor. For reference, on
-an RTX 3090 this will be on the order of 4-8 hours. The other case study do not
-train models, and therefore benefit less from having a GPU, the mainly push
+an RTX 3090 this will be on the order of 4–8 hours. The other case study do not
+train models, and therefore benefit less from having a GPU, they mainly push
 your memory bandwidth, this again makes MacBook with a large amount of RAM
 excellent local hardware. This should however be considered a last resort,
 unfortunately because of the long times involved you do not have the luxury to
@@ -100,22 +100,22 @@ After which you can simply install using `uv`
 uv pip install -e . 
 ```
 
-If this fails it might  be the case that you are missing some build
+If this fails it might be the case that you are missing some build
 tools, you should read the errors as they will likely tell you, but these could
 include `bison`, `flex` and `gcc`.
 
-On the REL servers just creating a venv and running 
+On the REL servers just running 
 
 ```bash
-uv pip install -e . 
+pip install -e . 
 ```
 
-will not work. As the standard python version will be python 3.9, but balrog
-(the textworld dependency specifically) requires at least version 3.10.
+will not work. As the standard python version will be python 3.9, but BALROG
+(the `textworld` dependency specifically) requires at least version 3.10.
 
 If you end up using a cloud provider you might need to make some changes to
-`balrog/client.py`. If the provider is compatible with either openAI, Anthropic
-or Google's api's it will be easiest to simply add a case where you manually
+`balrog/client.py`. If the provider is compatible with either OpenAI, Anthropic
+or Googles APIs it will be easiest to simply add a case where you manually
 provide your API-key. For example, when using `openrouter`, you can add to the
 `openai` wrapper as follows:
 
@@ -140,9 +140,9 @@ uv add -r requirements.txt
 ```
 
 
-# Case Study 4 There is a conflict in
+# Case Study 4
 No special remarks
 
-[^1]: Nvdia is better supported, but AMD should be fine. As far as I know Intel
-    GPUs (Arc) are not supported by `pytorch`, the same goes for 'NPUs' your
+[^1]: Nvidia is better supported, but AMD should be fine. As far as I know Intel
+    GPUs (Arc) are not supported by `pytorch`, the same goes for any 'NPU' your
     computer might come with. 
